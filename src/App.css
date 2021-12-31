@@ -1,0 +1,307 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Oswald", sans-serif;
+}
+
+.navbar {
+  background-color: rgba(219, 49, 63, 0.842);
+  height: 3rem;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.container {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 400px 400px 400px;
+  grid-template-rows: auto;
+  /* justify-content: space-around; */
+  /* align-content: space-between; */
+
+  margin: 0 auto;
+  column-gap: 10px;
+  row-gap: 10px;
+
+  /* min-width: 627px; */
+}
+.item {
+  display: flex;
+  flex-direction: column;
+  width: 40vh;
+  height: 27vh;
+  margin: 1rem 3rem;
+  padding: 1rem;
+  border: 5px solid black;
+  /* word-break: break-all;
+  white-space: pre-wrap; */
+}
+
+/* .item-img {
+  margin: 0 auto;
+}
+.i-img {
+  width: 10rem;
+  height: 15rem;
+} */
+
+.info .item-name {
+  font-size: 2rem;
+
+  font-family: monospace;
+}
+
+.sell-info {
+  margin-top: 10px;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: rgba(132, 138, 141, 0.363);
+}
+
+.sell-info .price {
+  text-decoration: none;
+  color: rgba(2, 0, 0, 0.822);
+  font-size: 2rem;
+}
+.quantity-opt {
+  height: 40px;
+}
+.btn {
+  width: 40px;
+  height: 40px;
+  /* padding: 0.5rem; */
+  font-size: 1.9rem;
+  border: none;
+  outline: none;
+}
+
+.btn-inc {
+  /* margin-right: 10px; */
+}
+
+.quantity {
+  margin: 0 20px;
+  width: 60px;
+  font-size: 1.4rem;
+  margin: 0 6px;
+}
+footer {
+  position: fixed;
+  height: 50px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  margin-bottom: 0px;
+}
+.amount-options {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: rgb(31, 33, 141);
+  width: 90vw;
+  margin: 0 auto;
+  border-radius: 40px 40px 0px 0px;
+  height: 60px;
+}
+.amount-options .reset,
+.amount-options .pay-option {
+  width: 80px;
+  height: 30px;
+  outline: none;
+  border: none;
+  font-size: 1.9;
+  border-radius: 30px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.amount-options .reset:hover,
+.amount-options .pay-option:hover {
+  letter-spacing: 1.5px;
+  transition: 0.5s ease-in-out;
+  font-size: 12pt;
+}
+.amount-options .totalamounts {
+  color: white;
+  font-size: 1.8rem;
+}
+.onekindofprice {
+  font-size: 2rem;
+  font-family: monospace;
+  margin: 5px auto;
+  width: 18vw;
+  background-color: rgba(172, 158, 158, 0.363);
+}
+
+.add-item {
+  background-color: rgba(123, 196, 171, 0.808);
+  padding: 8px;
+  margin: 17px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.add-item-name,
+.add-item-price {
+  color: rgba(0, 0, 0, 0.815);
+}
+.add-item-label {
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+.add-item-form-control {
+  padding: 5px;
+  border: none;
+  outline: none;
+  border: 2px solid black;
+}
+
+.add-item-button {
+  padding: 6px;
+  width: 70px;
+  height: 35px;
+  font-size: 14pt;
+  outline: none;
+  text-transform: uppercase;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: bold;
+
+  border: 1px solid rgba(9, 87, 13, 0.979);
+}
+
+/* Responsiveness */
+
+@media (740px <= width <= 1120px) {
+  .container {
+    display: grid;
+    grid-template-columns: 190px 190px 190px;
+    grid-template-rows: auto;
+    justify-content: space-evenly;
+    align-content: center;
+    column-gap: 10px;
+    row-gap: 15px;
+
+    margin: 0 auto;
+  }
+  .item {
+    width: 26vh;
+    height: 25vh;
+    margin: 0.04rem;
+  }
+  /* .i-img {
+    width: 5rem;
+    height: 8rem;
+  } */
+
+  .info {
+    margin: 0.4rem auto;
+    padding: 0.5rem;
+  }
+  .info .item-name {
+    font-size: 1.5rem;
+  }
+
+  .sell-info {
+    /* padding: 3px; */
+  }
+  .sell-info .price {
+    font-size: 1.3rem;
+  }
+
+  .btn {
+    font-size: 1.5rem;
+  }
+
+  .quantity {
+    font-size: 1.4rem;
+    margin: 0 6px;
+  }
+  .amount-options .totalamounts {
+    font-size: 1.5rem;
+  }
+
+  .onekindofprice {
+    font-size: 1.5rem;
+    margin: 5px auto;
+
+    margin: 5px auto;
+    width: 15vw;
+    background-color: rgba(172, 158, 158, 0.363);
+  }
+}
+
+@media (444px <= width <= 739px) {
+  .container {
+    grid-template-columns: 220px 220px;
+    column-gap: 40px;
+    row-gap: 15px;
+  }
+  .item {
+    width: 26vh;
+    height: 25vh;
+    margin: 0.04rem;
+  }
+  .info {
+    margin: 0.4rem auto;
+    padding: 0.5rem;
+  }
+  .info .item-name {
+    font-size: 1.5rem;
+  }
+
+  .sell-info {
+    /* padding: 3px; */
+  }
+  .sell-info .price {
+    font-size: 1.3rem;
+  }
+
+  .btn {
+    font-size: 1.5rem;
+  }
+
+  .quantity {
+    font-size: 1.4rem;
+    margin: 0 6px;
+  }
+  .amount-options .totalamounts {
+    font-size: 1.5rem;
+  }
+
+  .onekindofprice {
+    font-size: 1.5rem;
+    margin: 5px auto;
+
+    margin: 5px auto;
+    width: 20vw;
+    background-color: rgba(172, 158, 158, 0.363);
+  }
+  .add-item-button {
+    margin-top: 23px;
+    padding: 1px;
+    width: 60px;
+    height: 25px;
+    font-size: 10pt;
+    outline: none;
+    text-transform: uppercase;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+      Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    font-weight: bold;
+
+    border: 1px solid rgba(9, 87, 13, 0.979);
+  }
+}
